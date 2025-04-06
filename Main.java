@@ -26,6 +26,9 @@ public class Main {
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
             System.out.println("Error loading music: " + e.getMessage());
             System.exit(1);
+        } catch (Exception e) {
+            System.out.println("An unexpected error occurred: " + e.getMessage());
+            System.exit(1);
         }
 
         int choice = 0;
