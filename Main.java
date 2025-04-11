@@ -1,7 +1,7 @@
-import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+import javax.sound.sampled.*;
 
 public class Main {
 
@@ -49,20 +49,11 @@ public class Main {
             }
 
             switch (choice) {
-                case 1:
-                    playMusic();
-                    break;
-                case 2:
-                    pauseMusic();
-                    break;
-                case 3:
-                    resetMusic();
-                    break;
-                case 4:
-                    System.out.println("\nExiting the music player. Goodbye!\n");
-                    break;
-                default:
-                    System.out.println("\nInvalid choice. Please select a valid option.\n");
+                case 1 -> playMusic();
+                case 2 -> pauseMusic();
+                case 3 -> resetMusic();
+                case 4 -> System.out.println("\nExiting the music player. Goodbye!\n");
+                default -> System.out.println("\nInvalid choice. Please select a valid option.\n");
             }
         }
 
